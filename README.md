@@ -31,7 +31,7 @@ python3 predictor.py -f [path/to/input.fasta] -o [path/to/save/output.csv] -m [m
 ```
 ##### -f : input peptide data in FASTA format
 ##### -o : output prediction result in CSV 
-##### -m : model type (optional) "aug"( AVP+GAN model, defult), "n" (AVP model)， "aug18"(improved AVP+GAN model), "n22" (improved AVP model)
+##### -m : model type (optional) "aug"( AVP+GAN model, defult), "n" (AVP model)， "aug18"(improved AVP+GAN model), "n18" (improved AVP model), influ (influenza-based model)
 
 ### 3. Model training source code
 ##### Our AI4AVP model traing source code is shown in  ```AI4AVP_predictor/model_training```
