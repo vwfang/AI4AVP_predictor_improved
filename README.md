@@ -34,8 +34,8 @@ python3 predictor.py -f [path/to/input.fasta] -o [path/to/save/output.csv] -m [m
 ##### -m : model type (optional) "aug"( AVP+GAN model, defult), "n" (AVP model)， "aug18"(improved AVP+GAN model), "n18" (improved AVP model), influ (influenza-based model)
 
 ### 3. Model training source code
-##### Our AI4AVP model traing source code is shown in  ```AI4AVP_predictor/model_training```
-The improved model architecture is based on four layers of CNN (filters: (64, 32, 16, 8), kernel_size: (8, 8, 8, 8)) with rectified linear activation function (ReLU). The first output from the CNN layer is run through batch normalization and dropout (rate: (0.6)). The next two outputs from each CNN layer are run through batch normalization only. The fourth output goes from the CNN layer to batch normailization, dropout (rate:0.6), and Global Max Pooling. Finally, there is a fully connected layer (units: 1) with a sigmoid activation function converting output values to between 0 to 1. 
+##### Our AI4AVP model training source code is shown in  ```AI4AVP_predictor/model_training```
+The improved model architecture is based on four layers of CNN (filters: (64, 32, 16, 8), kernel_size: (8, 8, 8, 8)) with rectified linear activation function (ReLU). The first output from the CNN layer is run through batch normalization and dropout (rate: 0.6). The next two outputs from each CNN layer are run through batch normalization only. The fourth output goes from the CNN layer to batch normailization, dropout (rate:0.6), and Global Max Pooling. Finally, there is a fully connected layer (units: 1) with a sigmoid activation function converting output values to between 0 to 1. 
 
 The influenza-specific model is based off of the above improved model structure. It uses transfer learning and pre-loaded weights from the above model to train on a very small set of AVPs targeted towards influenza. The last 3 layers from the pre-loaded weights are frozen, and the rest are trained on the small set. 
 
