@@ -20,6 +20,8 @@ def main(input_fasta_name, output_csv_name, model_type= None):
         model = load_model('/home/AI4AVP_predictor_improved/model/PC_6_model_best_weights.h5')
     if model_type == 'n':
         model = load_model('/home/AI4AVP_predictor_improved/model/PC_6_model_n_best_weights.h5')
+    if model_type == 'n18':
+        model = load_model('/home/AI4AVP_predictor_improved/model/model18_PC_6_model_n_best_weights.h5')
     if model_type == 'aug18':
         model = load_model('/home/AI4AVP_predictor_improved/model/model18GAN_PC_6_model_best_weights.h5')
     if model_type == 'influ':
