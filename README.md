@@ -1,4 +1,4 @@
-# AI4AVP_predictor
+# AI4AVP_predictor improvements (updating database and revising model structure)
 ![](https://i.imgur.com/HWPjJ4R.png)
 ### AI4AVP is a sequence-based antiviral peptides (AVP) predictor based on PC6 protein encoding method [[link]](https://github.com/LinTzuTang/PC6-protein-encoding-method) and deep learning.
 ##### AI4AVP (web-server) is freely accessible at https://axp.iis.sinica.edu.tw/AI4AVP/
@@ -15,7 +15,7 @@ tensorflow==2.7.0
 ```
 
 ### Here we give a quick demo and command usage of our AI4AVP model (use with python 3.9.19).  
-### 1. quick demo of our PC6 model
+### 1. quick demo of the PC6 model
 ##### For quick demo our model, run the command below
 ```bash 
 bash AI4AVP_predictor_improved/example/example.sh
