@@ -24,7 +24,7 @@ bash AI4AVP_predictor_improved/example/example.sh
 ##### The prediction result (```test/example_output.csv```) below shows prediction scores  and whether the peptide is an AMP in table.
 ![](https://i.imgur.com/xLjlGHV.png)
 ### 2. command usage
-##### Please check predictor.py to check the path to the model type matches your directory (path is currently set to (```/home/AI4AVP_predictor/model/PC_6_model_best_weights.h5```))
+##### Please check predictor.py to check the path to the model type matches your directory (path is currently set to ```/home/AI4AVP_predictor/model/PC_6_model_best_weights.h5```)
 
 ```bash
 python3 predictor.py -f [path/to/input.fasta] -o [path/to/save/output.csv] -m [model_type]
